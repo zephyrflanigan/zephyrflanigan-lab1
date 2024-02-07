@@ -29,15 +29,9 @@ public class Rotor {
 
     public int indexOf(char c){
         //TODO
+        //return index in rotor of inputted character
+        return rotorValues.indexOf(c);
 
-        //searches through rotor for the inputted charcter
-        for(int i = 0; i < 27; i++) {
-            if(rotorValues.charAt(i) == c) {
-                return i;
-            }
-        }
-        //in the case the input is not a character in the rotor
-        return -1;
     }
 
     public char charAt(int idx){
